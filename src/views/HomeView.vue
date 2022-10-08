@@ -3,20 +3,20 @@
   <swiper :options="swiperOption" class="swiper">
     <swiper-slide data-aos="fade-in" data-aos-duration="1000" class="slide" style="background-image:url(image/top1.jpg);">
       <v-layout data-aos="fade-up" data-aos-duration="1000" fill-height align-center justify-center>
-        <div class="slog">명지전문대학 박민하</div>
+        <div class="slog">명지전문대학 졸업프로젝트 중간고사</div>
       </v-layout>
 
     </swiper-slide>
   
     <swiper-slide class="slide" style="background-image:url(image/top2.jpg);">
       <v-layout fill-height align-center justify-center>
-        <div class="slog">열심히</div>
+        <div class="slog">2022541004 박민하</div>
       </v-layout>
     </swiper-slide>
    
     <swiper-slide class="slide" style="background-image:url(image/top3.jpg);">
       <v-layout fill-height align-center justify-center>
-        <div class="slog">하겠습니다</div>
+        <div class="slog">저의 포트폴리오를 소개합니다</div>
       </v-layout>
     </swiper-slide>
   </swiper>
@@ -26,22 +26,22 @@
     <v-layout wrap>
       <v-flex xs4 class="pa-2" data-aos="fade-right">
         <v-responsive :aspect-ratio="1/1">
-        <img src="image/top1.jpg" class="image">
+        <img src="../assets/aboutme.png" class="image">
       </v-responsive>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-down" data-aos-delay="100">
         <v-responsive :aspect-ratio="1/1">
-        <img src="image/top2.jpg" class="image">
+        <img src="../assets/education.png" class="image">
       </v-responsive>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
         <v-responsive :aspect-ratio="1/1">
-        <img src="image/top3.jpg" class="image">
+        <img src="../assets/career.png" class="image">
       </v-responsive>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-right" data-aos-delay="300">
         <v-responsive :aspect-ratio="1/1">
-        <img src="image/top1.jpg" class="image">
+        <img src="../assets/certificate.png" class="image">
       </v-responsive>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="400">
@@ -114,6 +114,7 @@ import { Swiper , SwiperSlide } from 'vue-awesome-swiper'
     width:100%;
     height:100%;
     object-fit: cover;
+    padding: 50px;
   }
  }
 
