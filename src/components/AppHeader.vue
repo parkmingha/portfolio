@@ -5,7 +5,7 @@
         <v-spacer></v-spacer>
         <v-btn text @click="career">Career</v-btn>
         <v-btn text @click="certificate">Certificate</v-btn>
-        <v-btn text @click="portpolio">Portpolio</v-btn>
+        <v-btn text @click="portfolio">Portfolio</v-btn>
     </v-layout>
 </div>
 </template>
@@ -26,8 +26,8 @@ export default{
             this.$router.push("/certificate")
             
         },
-        portpolio() {
-            this.$router.push("/portpolio")
+        portfolio() {
+            this.$router.push("/portfolio")
             
         },
     }      

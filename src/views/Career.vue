@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <!-- <div>
      <swiper :options="swiperOption" class="swiper">
        <swiper-slide data-aos="fade-in" data-aos-duration="1000" class="slide" style="background-image:url(image/top1.jpg);">
          <v-layout data-aos="fade-up" data-aos-duration="1000" fill-height align-center justify-center>
@@ -19,29 +19,29 @@
            <div class="slog">하겠습니다</div>
          </v-layout>
        </swiper-slide>
-     </swiper>
+     </swiper> -->
      
      <div class = "section">
        <div class ="header">My Career</div>
        <v-layout wrap>
-         <v-flex xs4 class="pa-2" data-aos="fade-right">
+         <v-flex xs4 class="pa-2" data-aos="fade-up">
            <v-responsive :aspect-ratio="1/1">
            <img src="image/top1.jpg" class="image">
          </v-responsive>
          </v-flex>
-         <v-flex xs4 class="pa-2" data-aos="fade-down" data-aos-delay="100">
+         <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="200">
            <v-responsive :aspect-ratio="1/1">
            <img src="image/top2.jpg" class="image">
          </v-responsive>
          </v-flex>
-         <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
+         <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="400">
            <v-responsive :aspect-ratio="1/1">
            <img src="image/top3.jpg" class="image">
          </v-responsive>
          </v-flex>
        </v-layout>
      </div>
-    </div>
+    <!-- </div> -->
    </template>
    
    <script>

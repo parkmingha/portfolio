@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Career from '../views/Career.vue'
 import Certificate from '../views/Certificate.vue'
-import Portpolio from '../views/Portpolio.vue'
+import Portfolio from '../views/Portfolio.vue'
 import Linux from '../Certificate/Linux.vue'
 import Network from '../Certificate/Network.vue'
 import Drive from '../Certificate/Drive.vue'
@@ -35,9 +35,9 @@ const routes = [
     component: Certificate
   },
   {
-    path: '/portpolio',
-    name: 'portpolio',
-    component: Portpolio
+    path: '/portfolio',
+    name: 'portfolio',
+    component: Portfolio
   },
   {
     path: '/certificate/linux',

@@ -28,26 +28,31 @@
         <v-responsive :aspect-ratio="1/1">
         <img src="../assets/aboutme.png" class="image">
       </v-responsive>
+      <div class = "text"> about me </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-down" data-aos-delay="100">
         <v-responsive :aspect-ratio="1/1">
         <img src="../assets/education.png" class="image">
       </v-responsive>
+      <div class = "text"> education </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/career.png" class="image">
+        <img src="../assets/career.png" class="image" @click="morecareer">
       </v-responsive>
+      <div class = "text"> career </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-right" data-aos-delay="300">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/certificate.png" class="image">
+        <img src="../assets/certificate.png" class="image" @click="morecertificate">
       </v-responsive>
+      <div class = "text"> certificate </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="400">
         <v-responsive :aspect-ratio="1/1">
-        <img src="image/top2.jpg" class="image">
+          <img src="../assets/portfolio.png" class="image">
       </v-responsive>
+      <div class = "text"> portfolio </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="500">
         <v-responsive :aspect-ratio="1/1">
@@ -76,6 +81,14 @@ import { Swiper , SwiperSlide } from 'vue-awesome-swiper'
           }
         }
       }
+    },
+    methods: {
+      morecertificate() {
+        this.$router.push("/certificate")
+      },
+      morecareer() {
+        this.$router.push("/career")
+      },
     },
     mounted(){
       AOS.init()
@@ -115,6 +128,12 @@ import { Swiper , SwiperSlide } from 'vue-awesome-swiper'
     height:100%;
     object-fit: cover;
     padding: 50px;
+  }
+  .text{
+    text-align: center;
+    font-size:40px;
+    font-weight:bold;
+    
   }
  }
 
