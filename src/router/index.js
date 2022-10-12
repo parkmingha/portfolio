@@ -4,6 +4,8 @@ import HomeView from '../views/HomeView.vue'
 import Career from '../views/Career.vue'
 import Certificate from '../views/Certificate.vue'
 import Portfolio from '../views/Portfolio.vue'
+import Aboutme from '../views/Aboutme.vue'
+import Education from '../views/Education.vue'
 import Linux from '../Certificate/Linux.vue'
 import Network from '../Certificate/Network.vue'
 import Drive from '../Certificate/Drive.vue'
@@ -38,6 +40,16 @@ const routes = [
     path: '/portfolio',
     name: 'portfolio',
     component: Portfolio
+  },
+  {
+    path: '/aboutme',
+    name: 'aboutme',
+    component: Aboutme
+  },
+  {
+    path: '/education',
+    name: 'education',
+    component: Education
   },
   {
     path: '/certificate/linux',

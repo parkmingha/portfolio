@@ -5,8 +5,8 @@
       <v-layout data-aos="fade-up" data-aos-duration="1000" fill-height align-center justify-center>
         <div class="slog">명지전문대학 졸업프로젝트 중간고사</div>
       </v-layout>
-
     </swiper-slide>
+    
   
     <swiper-slide class="slide" style="background-image:url(image/top2.jpg);">
       <v-layout fill-height align-center justify-center>
@@ -26,31 +26,31 @@
     <v-layout wrap>
       <v-flex xs4 class="pa-2" data-aos="fade-right">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/aboutme.png" class="image">
+        <img src="../assets/aboutme.png" class="image" @click="aboutme">
       </v-responsive>
       <div class = "text"> about me </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-down" data-aos-delay="100">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/education.png" class="image">
+        <img src="../assets/education.png" class="image" @click="education">
       </v-responsive>
       <div class = "text"> education </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/career.png" class="image" @click="morecareer">
+        <img src="../assets/career.png" class="image" @click="career">
       </v-responsive>
       <div class = "text"> career </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-right" data-aos-delay="300">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/certificate.png" class="image" @click="morecertificate">
+        <img src="../assets/certificate.png" class="image" @click="certificate">
       </v-responsive>
       <div class = "text"> certificate </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="400">
         <v-responsive :aspect-ratio="1/1">
-          <img src="../assets/portfolio.png" class="image">
+          <img src="../assets/portfolio.png" class="image" @click="portfolio">
       </v-responsive>
       <div class = "text"> portfolio </div>
       </v-flex>
@@ -83,11 +83,20 @@ import { Swiper , SwiperSlide } from 'vue-awesome-swiper'
       }
     },
     methods: {
-      morecertificate() {
+      certificate() {
         this.$router.push("/certificate")
       },
-      morecareer() {
+      career() {
         this.$router.push("/career")
+      },
+      portfolio() {
+        this.$router.push("/portfolio")
+      },
+      aboutme() {
+        this.$router.push("/aboutme")
+      },
+      education() {
+        this.$router.push("/education")
       },
     },
     mounted(){
