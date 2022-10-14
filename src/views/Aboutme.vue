@@ -19,19 +19,6 @@
 </script>
 
 <style scoped lang="less">
-.swiper{
-  height:100vh;
-  .slide{
-    background-size:cover;
-    background-position: center center;
-  .slog{
-    font-size:60px;
-    font-weight:bold;
-    color:white;
-  }
-}
-}
-
 .section{
 width:1190px;
 margin: 0 auto;
@@ -42,7 +29,7 @@ padding-bottom:40px;
   font-size:40px;
   font-weight:bold;
   padding-top:65px;
-  padding-bottom:80px;
+  padding-bottom:150px;
 
 
 }
