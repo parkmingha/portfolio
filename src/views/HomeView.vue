@@ -1,20 +1,20 @@
 <template>
  <div>
   <swiper :options="swiperOption" class="swiper">
-    <swiper-slide data-aos="fade-in" data-aos-duration="1000" class="slide" style="background-image:url(image/top1.jpg);">
+    <swiper-slide data-aos="fade-in" data-aos-duration="1000" class="slide" style="background-image:url(image/bg1.jpg);">
       <v-layout data-aos="fade-up" data-aos-duration="1000" fill-height align-center justify-center>
         <div class="slog">명지전문대학 졸업프로젝트 중간고사</div>
       </v-layout>
     </swiper-slide>
     
   
-    <swiper-slide class="slide" style="background-image:url(image/top2.jpg);">
+    <swiper-slide class="slide" style="background-image:url(image/bg2.jpg);">
       <v-layout fill-height align-center justify-center>
         <div class="slog">2022541004 박민하</div>
       </v-layout>
     </swiper-slide>
    
-    <swiper-slide class="slide" style="background-image:url(image/top3.jpg);">
+    <swiper-slide class="slide" style="background-image:url(image/bg3.jpg);">
       <v-layout fill-height align-center justify-center>
         <div class="slog">저의 포트폴리오를 소개합니다</div>
       </v-layout>
@@ -26,31 +26,31 @@
     <v-layout wrap>
       <v-flex xs4 class="pa-2" data-aos="fade-right">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/aboutme.png" class="image" @click="aboutme">
+        <img src="image/aboutme.png" class="image" @click="aboutme">
       </v-responsive>
       <div class = "text"> about me </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-down" data-aos-delay="100">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/education.png" class="image" @click="education">
+        <img src="image/education.png" class="image" @click="education">
       </v-responsive>
       <div class = "text"> education </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/career.png" class="image" @click="career">
+        <img src="image/career.png" class="image" @click="career">
       </v-responsive>
       <div class = "text"> career </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-right" data-aos-delay="300">
         <v-responsive :aspect-ratio="1/1">
-        <img src="../assets/certificate.png" class="image" @click="certificate">
+        <img src="image/certificate.png" class="image" @click="certificate">
       </v-responsive>
       <div class = "text"> certificate </div>
       </v-flex>
       <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="400">
         <v-responsive :aspect-ratio="1/1">
-          <img src="../assets/portfolio.png" class="image" @click="portfolio">
+          <img src="image/portfolio.png" class="image" @click="portfolio">
       </v-responsive>
       <div class = "text"> portfolio </div>
       </v-flex>
@@ -117,7 +117,7 @@ import { Swiper , SwiperSlide } from 'vue-awesome-swiper'
     .slog{
       font-size:60px;
       font-weight:bold;
-      color:white;
+      color:rgba(10, 7, 7, 0.869);
     }
   }
  }
