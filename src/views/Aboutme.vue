@@ -13,17 +13,17 @@
   <v-bottom-navigation grow dark>
     <v-btn :href="'https://github.com/parkmingha'" target="_blank">
       <span>GitHub</span>
-      <v-icon>mdi-github</v-icon>
+      <v-icon size="30" color="green">mdi-github</v-icon>
     </v-btn>
 
     <v-btn :href="'https://open.kakao.com/o/stHUTUHe'" target="_blank">
       <span>kakaotalk</span>
-      <v-icon>mdi-chat</v-icon>
+      <v-icon size="30" color="yellow">mdi-chat</v-icon>
     </v-btn>
 
     <v-btn :href="'https://www.instagram.com/b_minha/'" target="_blank">
       <span>Instagram</span>
-      <v-icon>mdi-instagram</v-icon>
+      <v-icon size="30" color="pink">mdi-instagram</v-icon>
     </v-btn>
     </v-bottom-navigation>
   </div>
@@ -32,9 +32,11 @@
 </template>
 
 <script>
-
-
-
+// export default {
+//   data: () => ({
+//     bottomNav: false,
+//   }),
+// }
 </script>
 
 <style scoped lang="less">
