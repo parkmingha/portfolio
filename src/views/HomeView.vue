@@ -22,7 +22,7 @@
   </swiper>
   
   <div class = "section">
-    <div class ="header">프로젝트 목록</div>
+    <div class ="header">Contents</div>
     <v-layout wrap>
       <v-flex xs4 class="pa-2" data-aos="fade-right">
         <v-responsive :aspect-ratio="1/1">

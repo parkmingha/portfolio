@@ -165,13 +165,13 @@ data: () => ({
 .section{
 width:1190px;
 margin: 0 auto;
-padding-top:110px;
-padding-bottom:150px;
-background-color: rgb(255, 255, 255);
+padding-top:40px;
+padding-bottom:40px;
 .header{
   text-align: center;
-  font-size:60px;
+  font-size:70px;
   font-weight:bold;
+  padding-top:65px;
   padding-bottom:150px;
 }
 .image{
