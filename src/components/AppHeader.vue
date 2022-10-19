@@ -1,10 +1,10 @@
 <template>
 <div class="header">
     <v-layout>
-        <div class="logo" @click="home">박민하의 포트폴리오</div>
+        <div class="logo">박민하의 포트폴리오</div>
         <v-spacer></v-spacer>
         <div class="button">
-        <v-btn text @click="home">Home</v-btn>
+        <v-btn text >Home</v-btn>
         <v-btn text @click="career">Career</v-btn>
         <v-btn text @click="certificate">Certificate</v-btn>
         <v-btn text @click="portfolio">Portfolio</v-btn>
