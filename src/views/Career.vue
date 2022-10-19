@@ -6,7 +6,7 @@
       class="mx-auto"
       color="grey lighten-4"
       max-width="600"
-    >
+      data-aos="zoom-in-up" data-aos-delay="300">
       <v-img
         :aspect-ratio="16/9"
         src="image/pcb.jpg"
@@ -44,10 +44,11 @@
  <br>
 
     <v-hover v-slot="{ hover }">
-    <v-card
+    <v-card 
       class="mx-auto"
       color="grey lighten-4"
       max-width="600"
+      data-aos="zoom-in-up" data-aos-delay="600"
     >
       <v-img
         :aspect-ratio="16/9"
@@ -79,9 +80,35 @@
       </v-card-text>
     </v-card>
   </v-hover>
+
   
   </div>
 </template>
+<script>
+  import AOS from "aos"
+  import "aos/dist/aos.css";
+
+   export default {
+    name: 'Home',
+    data(){
+      return {
+        swiperOption:{
+          loop:true,
+          autoPlay:{
+            delay:3000
+
+      }
+    }
+  }
+},
+    methods: {
+    },
+    mounted(){
+      AOS.init()
+    },
+  }
+</script>
+
 <style scoped lang="less">
 
 .section{

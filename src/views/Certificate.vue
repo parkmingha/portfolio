@@ -3,11 +3,12 @@
     <div class ="header">My Certificate</div>
  <v-card
    class="mx-auto"
-   max-width="704"
+   max-width="904"
+   data-aos="zoom-out-down" data-aos-delay="200"
  >
    <v-img
      src="image/linux.png"
-     height="250px"
+     height="350px"
    ></v-img>
 
    <v-card-title>
@@ -54,11 +55,12 @@
  <br>
  <v-card
    class="mx-auto"
-   max-width="704"
+   max-width="904"
+   data-aos="zoom-out-down" data-aos-delay="500"
  >
    <v-img
      src="image/network.png"
-     height="250px"
+     height="350px"
    ></v-img>
 
    <v-card-title>
@@ -104,11 +106,12 @@
  <br>
  <v-card
    class="mx-auto"
-   max-width="704"
+   max-width="904"
+   data-aos="zoom-out-down" data-aos-delay="800"
  >
    <v-img
      src="image/drive.png"
-     height="250px"
+     height="350px"
    ></v-img>
 
    <v-card-title>
@@ -152,6 +155,7 @@
 </div>
 </template>
 <script>
+
 export default {
 data: () => ({
  show1: false,
@@ -184,7 +188,6 @@ padding-bottom:40px;
 text-align: center;
 font-size:33px;
 font-weight:bold;
-
 }
 }
 

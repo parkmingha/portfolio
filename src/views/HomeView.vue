@@ -24,40 +24,41 @@
   <div class = "section">
     <div class ="header">Contents</div>
     <v-layout wrap>
-      <v-flex xs4 class="pa-2" data-aos="fade-right">
+      <v-flex xs4 class="pa-2" data-aos="zoom-in-up" data-aos-delay="200">
         <v-responsive :aspect-ratio="1/1">
         <img src="image/aboutme.png" class="image" @click="aboutme">
       </v-responsive>
-      <div class = "text"> about me </div>
+      <div class = "text"> About me </div>
       </v-flex>
-      <v-flex xs4 class="pa-2" data-aos="fade-down" data-aos-delay="100">
+      <v-flex xs4 class="pa-2" data-aos="zoom-in-up" data-aos-delay="400">
         <v-responsive :aspect-ratio="1/1">
         <img src="image/education.png" class="image" @click="education">
       </v-responsive>
-      <div class = "text"> education </div>
+      <div class = "text"> Education </div>
       </v-flex>
-      <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="200">
+      <v-flex xs4 class="pa-2" data-aos="zoom-in-up" data-aos-delay="600">
         <v-responsive :aspect-ratio="1/1">
         <img src="image/career.png" class="image" @click="career">
       </v-responsive>
-      <div class = "text"> career </div>
+      <div class = "text"> Career </div>
       </v-flex>
-      <v-flex xs4 class="pa-2" data-aos="fade-right" data-aos-delay="300">
+      <v-flex xs4 class="pa-2" data-aos="zoom-in-up" data-aos-delay="800">
         <v-responsive :aspect-ratio="1/1">
         <img src="image/certificate.png" class="image" @click="certificate">
       </v-responsive>
-      <div class = "text"> certificate </div>
+      <div class = "text"> Certificate </div>
       </v-flex>
-      <v-flex xs4 class="pa-2" data-aos="fade-up" data-aos-delay="400">
+      <v-flex xs4 class="pa-2" data-aos="zoom-in-up" data-aos-delay="1000">
         <v-responsive :aspect-ratio="1/1">
           <img src="image/portfolio.png" class="image" @click="portfolio">
       </v-responsive>
-      <div class = "text"> portfolio </div>
+      <div class = "text"> Portfolio </div>
       </v-flex>
-      <v-flex xs4 class="pa-2" data-aos="fade-left" data-aos-delay="500">
+      <v-flex xs4 class="pa-2" data-aos="zoom-in-up" data-aos-delay="1200">
         <v-responsive :aspect-ratio="1/1">
-        <img src="image/top3.jpg" class="image">
+        <img src="image/awards.png" class="image"  @click="awards">
       </v-responsive>
+      <div class = "text"> Awards & Scholarships </div>
       </v-flex>
     </v-layout>
   </div>
@@ -97,6 +98,9 @@ import { Swiper , SwiperSlide } from 'vue-awesome-swiper'
       },
       education() {
         this.$router.push("/education")
+      },
+      awards() {
+        this.$router.push("/awards")
       },
     },
     mounted(){

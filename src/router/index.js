@@ -6,9 +6,7 @@ import Certificate from '../views/Certificate.vue'
 import Portfolio from '../views/Portfolio.vue'
 import Aboutme from '../views/Aboutme.vue'
 import Education from '../views/Education.vue'
-import Linux from '../Certificate/Linux.vue'
-import Network from '../Certificate/Network.vue'
-import Drive from '../Certificate/Drive.vue'
+import Awards from '../views/Awards.vue'
 
 Vue.use(VueRouter)
 
@@ -52,20 +50,11 @@ const routes = [
     component: Education
   },
   {
-    path: '/certificate/linux',
-    name: 'linux',
-    component: Linux
+    path: '/awards',
+    name: 'awards',
+    component: Awards
   },
-  {
-    path: '/certificate/network',
-    name: 'network',
-    component: Network
-  },
-  {
-    path: '/certificate/drive',
-    name: 'drive',
-    component: Drive
-  },
+
 ]
 
 const router = new VueRouter({

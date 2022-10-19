@@ -40,6 +40,10 @@ export default{
 
 <style scoped>
     .header{
+        position: fixed; 
+        top: 0px;
+        width:100%;
+        z-index: 100;
         padding:20px;
         box-shadow: 0 6px rgb(136, 133, 133);
         background-color: rgb(186, 186, 185);

@@ -32,11 +32,8 @@
 </template>
 
 <script>
-// export default {
-//   data: () => ({
-//     bottomNav: false,
-//   }),
-// }
+
+
 </script>
 
 <style scoped lang="less">
@@ -50,7 +47,7 @@ padding-bottom:40px;
   font-size:70px;
   font-weight:bold;
   padding-top:65px;
-  padding-bottom:150px;
+  padding-bottom:300px;
 }
 .image{
   width:170px;
@@ -64,7 +61,7 @@ padding-bottom:40px;
   color:rgb(7, 9, 10)
 }
 .link{
-  padding-top: 600px;
+  padding-top: 450px;
 }
 }
 
